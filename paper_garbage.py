@@ -8,6 +8,6 @@ class PaperGarbage(Garbage):
         self.is_squeezed = is_squeezed
 
     def squeeze(self):
-        if self.is_squeezed != True:
+        if not self.is_squeezed:
             self.is_squeezed = True
         return self.is_squeezed

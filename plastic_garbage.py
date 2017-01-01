@@ -8,6 +8,6 @@ class PlasticGarbage(Garbage):
         self.is_clean = is_clean
 
     def clean(self):
-        if self.is_clean != True:
+        if not self.is_clean:
             self.is_clean = True
         return self.is_clean
